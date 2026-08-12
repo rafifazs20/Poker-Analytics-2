@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poker-analytics"
+version = "0.1.0"
+description = "Manual-input No-Limit Texas Hold'em DSS research scaffold."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pokerkit>=0.7,<0.8",
+    "torch>=2.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+poker-analytics = "poker_analytics.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
