@@ -12,6 +12,12 @@ This project is intentionally designed as a local, manual DSS. It does not read 
 - Tensor feature mapping for future PyTorch policy/value networks.
 - Optional PokerKit adapter for No-Limit Texas Hold'em mechanics.
 
+## Research References
+
+- PokerKit: https://github.com/uoftcprg/pokerkit
+- Libratus talk/video reference: https://youtu.be/2dX0lwaQRX0
+- Reference notes: [docs/references.md](docs/references.md)
+
 ## Quick Start
 
 ```powershell
@@ -33,14 +39,17 @@ Without installing the package, from the repo root:
 $env:PYTHONPATH="src"; python -m poker_analytics quick --position BTN --hole AhKh --board 9hTs9s --pot 120 --hero-stack 980 --effective-stack 760 --opponent-bet 80 --players 6
 ```
 
-## GitHub Setup
+## GitHub Remote
 
-Create an empty public GitHub repository named `Poker-Analytics-2`, then connect this local repo:
+This repository tracks:
+
+```text
+https://github.com/rafifazs20/Poker-Analytics-2.git
+```
+
+If this checkout ever needs to be reconnected:
 
 ```powershell
 git remote add origin <repo-url>
-git add .
-git commit -m "Initial project setup"
 git push -u origin main
 ```
-
