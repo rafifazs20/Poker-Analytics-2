@@ -26,6 +26,7 @@ Primary paper metadata:
 - Science/PubMed: https://pubmed.ncbi.nlm.nih.gov/29249696/
 - CMU overview: https://www.cmu.edu/news/stories/archives/2017/december/ai-inner-workings.html
 - Video reference: https://youtu.be/2dX0lwaQRX0
+- Microsoft Research talk page: https://www.microsoft.com/en-us/research/video/super-human-ai-for-strategic-reasoning/
 
 Libratus is the architectural inspiration, but this project is a practical research replica rather than a claim of superhuman parity.
 
